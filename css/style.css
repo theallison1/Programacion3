@@ -478,6 +478,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 /* Sections Header
 --------------------------------*/
+.table-style {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .section-header .section-title {
   font-size: 32px;
   color: #111;
