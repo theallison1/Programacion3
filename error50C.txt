@@ -1,6 +1,0 @@
-PDOException: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
- in C:\xampp\htdocs\Programacion3\ejercicio-poo\connection.php:28
-Stack trace:
-#0 C:\xampp\htdocs\Programacion3\ejercicio-poo\connection.php(28): PDO->__construct('mysql:host=127....', 'root', '')
-#1 C:\xampp\htdocs\Programacion3\ejercicio-poo\index.php(54): Connection->connect()
-#2 {main}
