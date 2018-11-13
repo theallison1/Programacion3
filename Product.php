@@ -7,10 +7,11 @@ class Product {
     private $price;
     protected $quantity;
 
-    public function __construct($name = null, $price = 0)
+    public function __construct($name = null, $price = 0,$quantity = 0)
     {
         $this->setName($name);
         $this->setPrice($price);
+        $this->setQuantity($quantity);
 
         return $this;
     }
@@ -25,6 +26,11 @@ class Product {
     {
         $this->price = $newPrice;
     }
+    //si no le asignan una cantidad le asignamos uno por defecto
+    public function setQuantity($newQuantity = 0)
+    {
+        $this->quantity = $newQuantity;
+    }
 
     public function getPrice()
     {
@@ -34,6 +40,11 @@ class Product {
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getQuantity()
+    {
+        return $this->quantity;
     }
 
     
