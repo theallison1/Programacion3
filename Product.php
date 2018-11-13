@@ -5,7 +5,7 @@ class Product {
     # definición de propiedades
     private $name;
     private $price;
-    protected $gift;
+    protected $quantity;
 
     public function __construct($name = null, $price = 0)
     {
