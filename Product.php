@@ -12,6 +12,8 @@ class Product {
         $this->setName($name);
         $this->setPrice($price);
         $this->setQuantity($quantity);
+        // $this->setQuantity($quantity);
+        
 
         return $this;
     }
