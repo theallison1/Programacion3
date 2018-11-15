@@ -41,7 +41,6 @@
           <tr>
             <th scope="col">Product</th>
             <th scope="col">Price</th>
-            <th scope="col">Stock</th>
             <th scope="col">Action</th>
             <!-- <th scope="col">Action</th> -->
           </tr>
@@ -50,7 +49,6 @@
           <tr>
             <th scope="row">Tobacco</th>
             <td>50</td>
-            <td>30</td>
             <td colspan="2">
               <button type="button" data-toggle="modal" data-target="#edit" class="btn btn-lg btn-warning btn-sm">Edit</button>
               <button type="button" class="btn btn-lg btn-danger btn-sm">Delete</button>
@@ -59,7 +57,6 @@
           <tr>
             <th scope="row">Tomato</th>
             <td>10</td>
-            <td>100</td>
             <td colspan="2">
               <button type="button" data-toggle="modal" data-target="#edit" class="btn btn-lg btn-warning btn-sm">Edit</button>
               <button type="button" class="btn btn-lg btn-danger btn-sm">Delete</button>
@@ -68,7 +65,6 @@
           <tr>
             <th scope="row">Tomacco</th>
             <td>1000</td>
-            <td>1</td>
             <td colspan="2">
               <button type="button" data-toggle="modal" data-target="#edit" class="btn btn-lg btn-warning btn-sm">Edit</button>
               <button type="button" class="btn btn-lg btn-danger btn-sm">Delete</button>
@@ -80,6 +76,7 @@
   </section>
   </div>
 
+<!-- Modal editar producto -->
   <section>
     <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="editProduct" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -91,30 +88,62 @@
               </button>
             </div>
             <div class="modal-body">
-              <form>
+              <form id="form-edit">
                 <div class="form-group">
-                  <label for="product-name" class="col-form-label">Product:</label>
-                  <input type="text" class="form-control" id="product-name">
+                  <label for="product" class="col-form-label">Product:</label>
+                  <input type="text" class="form-control" id="product">
                 </div>
                 <div class="form-group">
-                  <label for="price-txt" class="col-form-label">Price:</label>
-                  <input type="text" class="form-control" id="price-txt">
-                </div>
-                <div class="form-group">
-                  <label for="stock-txt" class="col-form-label">Stock:</label>
-                  <input type="text" class="form-control" id="stock-txt">
+                  <label for="price" class="col-form-label">Price:</label>
+                  <input type="text" class="form-control" id="price">
                 </div>
               </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Send</button>
+              <button type="submit" class="btn btn-primary">Send</button>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+<!-- Modal nuevo producto -->
+    <section>
+    <div class="modal fade" id="new" tabindex="-1" role="dialog" aria-labelledby="newProduct" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-tittle" id="editProduct">New product</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="form-new">
+                <div class="form-group">
+                  <label for="product-new" class="col-form-label">Product:</label>
+                  <input type="text" class="form-control" id="product-new">
+                </div>
+                <div class="form-group">
+                  <label for="price-new" class="col-form-label">Price:</label>
+                  <input type="text" class="form-control" id="price-new">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="nproduct.js"></script>
+  <script src="eproduct.js"></script>
 
   <!-- Sripts propios de Boostrap -->
   <script src="../lib/jquery/jquery.min.js"></script> 
