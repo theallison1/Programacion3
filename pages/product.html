@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Programación III</title>
+
+  <!-- Archivos propios de Boostrap -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="hero-container">
+        <h1>Supermerk2</h1>
+      </div>
+
+       <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li class="menu-active"><a href="product.html">Products</a></li>
+          <li><a href="sale.html">Sales</a></li>
+        </ul>
+      </nav> 
+    </div>
+    <div class="trans text-center">   
+    <br><br><br><button type="button" data-toggle="modal" data-target="#new" class="btn btn-lg btn-info btn-sm">New Product</button> 
+  </div>
+  </header> 
+
+<div>
+  <section id="hero">
+    <div class="hero-container">
+      <table class="table table-striped table-style">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody id=table-product>
+          
+        </tbody>
+      </table>
+    </div>
+  </section>
+  </div>
+
+<!-- Modal editar producto -->
+  <section>
+    <div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="editProduct" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-tittle" id="editProduct">Edit product</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="form-edit">
+                <div class="form-group">
+                  <label for="product" class="col-form-label">Product:</label>
+                  <input type="text" class="form-control" id="product">
+                </div>
+                <div class="form-group">
+                  <label for="price" class="col-form-label">Price:</label>
+                  <input type="text" class="form-control" id="price">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Modal nuevo producto -->
+    <section>
+    <div class="modal fade" id="new" tabindex="-1" role="dialog" aria-labelledby="newProduct" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-tittle" id="editProduct">New product</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form id="form-new">
+                <div class="form-group">
+                  <label for="product-new" class="col-form-label">Product:</label>
+                  <input type="text" class="form-control" id="product-new">
+                </div>
+                <div class="form-group">
+                  <label for="price-new" class="col-form-label">Price:</label>
+                  <input type="text" class="form-control" id="price-new">
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="nproduct.js"></script>
+  <script src="eproduct.js"></script>
+
+  <!-- Sripts propios de Boostrap -->
+  <script src="../lib/jquery/jquery.min.js"></script> 
+  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+</body>
+</html>

@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
+  width: auto;
   height: 100vh;
   background: url(../img/hero-bg.jpg) top center;
   background-size: cover;
@@ -478,6 +478,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------------------------------------*/
 /* Sections Header
 --------------------------------*/
+.table-style {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
 .section-header .section-title {
   font-size: 32px;
   color: #111;
