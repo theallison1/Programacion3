@@ -6,7 +6,7 @@ formnew.addEventListener('submit', function(e){
 
     var datos = new FormData(formnew);
 
-    fetch('post.php',{
+    fetch('../php/post.php',{
         method: 'POST',
         body: datos
     })
